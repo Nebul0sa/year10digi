@@ -1,0 +1,166 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    animation: bgfade 3s;
+    -webkit-animation: bgfade 3s;
+    background-image: -webkit-gradient( linear, left top, left bottom,
+                    color-stop(0, rgb(180, 1, 120)),
+                    color-stop(0.57, rgb(2000, 9, 110)));
+    background-attachment: fixed;
+font-family: 'Oswald', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.longtext {
+    font-size: 20pt;    
+    font-weight: normal;
+}
+
+.longtextaboutme {
+    font-size: 14pt;    
+    font-weight: normal;
+}
+
+.longarticle {
+    font-size: 14pt;    
+    font-weight: normal;
+}
+.nav ul {
+    background-image:  -webkit-gradient( linear, left top, right top,
+                    color-stop(0, rgb(180, 9, 120)),
+                    color-stop(0.57, rgb(190, 1, 110)));
+    background-attachment: fixed;
+    list-style: none;
+    margin:10 4px;
+    padding: 0;
+    text-align: center;
+    border: ;        
+}
+.nav li {
+    border-bottom: 1px solid #888;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8 em;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 4px;
+}
+
+.nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: .5s background-color;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+.nav a.active {
+    background-color:darkgrey;
+    color: #444;
+    cursor: default;
+}
+@media screen and (min-width: 600px)
+{
+    .nav li {
+        border-bottom: none;
+        font-size: 1.2em;
+        height: 50px;
+        line-height: 50px;
+        width: 120px;
+    }
+    
+    /* Option 1 - Display Inline */
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+    
+}
+
+.smartphonelinkimages{
+    width:200px;
+    height:75px;
+}
+
+.desc {
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 100%;
+}
+
+div:hover .desc {
+    visibility: visible;
+}
+
+div.img.img {
+    max-width: 100%;
+}
+
+div.img {
+    background-color: #C492B1;   
+    border-radius: 32px;
+    box-sizing: border-box;
+    float: left;
+    height: auto;
+    line-height: 0px;
+    margin: 160px 180px 0px 0px;
+    padding: 13px;
+    text-align: center;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    width: 180px;
+}
+
+div:hover {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+div.img img {
+    display: inline-block;
+    margin: 3px;
+}
+
+@keyframes bgfade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bgfade {
+/* Safari and Chrome */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+div.tests{
+    text-align: center;
+}
+
+div.tests img{
+    width:47%;
+    border-style: solid;
+    border:4;
+}
